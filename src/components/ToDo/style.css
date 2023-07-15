@@ -1,0 +1,141 @@
+body {
+    background-color: #fffbf4;
+    min-height: 70vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(198, 1%, 29%);
+    font-family: "Architects Daughter", cursive;
+    font-size: 130%;
+  }
+  h1 {
+    margin-top: 16px;
+    margin-bottom: 11px;
+    margin-left: 13px;
+  }
+  
+  .mainContainer {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    max-width: 500px;
+    min-width: 300px;
+    background: #ffffff;
+    background-size: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 7px 2px #00000040;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .bottom{
+    margin-top: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top: 2px solid #e5e5e5;
+    width: 100%;
+    height:60px;
+
+  }
+  .bottom input {
+    background-color: #f0f1f1;
+    border-radius: 5px;
+    height: 40px;
+    width: 180px;
+    border: solid #f0f1f1;
+    padding-left: 10px;
+    font-size: 1rem;
+    margin: 6px 10px;
+  }
+
+  .bottom button {
+    background-color: #4eb570;
+    color: white;
+    border-radius: 5px;
+    height: 47px;
+    width: 75px;
+    font-size: 1rem;
+    border: 15px solid #4eb570;
+    
+  }
+  .top{
+    margin-bottom: 50px;
+  }
+  .todorow {
+    height: 50px;
+   position: relative;
+    
+  }
+  .todorow label{
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+ 
+  .todorow button{
+    position: absolute;
+    color: white;
+    background-color: #4eb570;
+    right: 10px;
+    border-radius: 20%;
+    border: 0.8em solid #4eb570;
+    font-size: 10.5px;
+    top: 10px;
+  }
+
+  
+  .top input {
+    margin-right: 10px;
+  }
+  
+
+  .custom-checkbox {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: -16px;
+    left: -10px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #dedede;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkmark.checked {
+    background-color: #4eb570;
+  }
+  
+  .checkmark:after {
+    
+    position: absolute;
+    display: none;
+  }
+  
+  .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .custom-checkbox .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
